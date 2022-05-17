@@ -1,0 +1,36 @@
+Curso git y github
+1. Git initi = inicias el repositorio
+2. Git add + nombre del archivo = Iniciaras el archivo en un estpacio de memoria ram llamado staging
+3. Git commit -m "Mensaje de los cambios realizados" = Con este comando enviarás el archivo a tu repositorio local y
+guardará los cambios realizados al archivo 
+
+Regresar a un archivo
+Si quieres regresar en el tiempo y volver a una versión anterior de tu archivo borrando los cambios realizados 
+previamente de tu repositorio local se usa el comando Git reset
+Hay dos maneras --hard y --soft
+git reset (ID referente al commit) --hard
+
+
+Si quieres volver a una versión anterior sin borrar el historial del archivo el comando que debes emplear es: 
+git checkout +ID commit
+En este estado puedes realizar cambios pero si realizas nuevamente un commit ese será 
+tu archivo actual
+
+Creación de ramas
+Para crear una nueva rama se utiliza el comando git branch + nombre de la rama (git branch contenido)
+para entrar a la rama utilizas el comando git checkout + nombre rama (git checkout contenido)
+Al cambiar de rama cambiarán los archivos en tu repositorio local pero seguirán estando guardados en cada rama
+solo si haces un commit a los cambios
+
+Fusión de ramas
+Debe situarse en la rama master para poder hacer el marge (acción que fusiona los commits)
+Con git branch puedes saber cuantas ramas hay y sus nombres
+Hacer la fusión con el siguiente código:
+git merge + nombre de cabecera (git marge cabecera)
+Aparecerá vim pidiendo un nombre del branch, shift + zz (salir del vim)
+Guardamos los cambios con un commit 
+
+
+
+
+
